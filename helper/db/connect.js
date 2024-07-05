@@ -50,7 +50,7 @@ export class connect {
         
         let url = `${this.#host}${this.user}:${this.#pass}@${this.cluster}:${this.port}`;
         this.conexion = new MongoClient(url);
-        this.conexion.connect;
+         await this.conexion.connect();
 
         console.log('conection message');
      }
